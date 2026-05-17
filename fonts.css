@@ -1,0 +1,89 @@
+/* Neue Montreal Font Family */
+/* Bold */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/NeueMontreal/NeueMontreal-Bold.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/NeueMontreal/NeueMontreal-BoldItalic.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/NeueMontreal/NeueMontreal-Italic.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/NeueMontreal/NeueMontreal-Light.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/NeueMontreal/NeueMontreal-LightItalic.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/NeueMontreal/NeueMontreal-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/NeueMontreal/NeueMontreal-MediumItalic.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/assets/fonts/NeueMontreal/NeueMontreal-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Regular */
+@font-face {
+  font-family: "EXCRATCH";
+  src: url("/assets/fonts/EXCRATCH/EXCRATCH\ Bold.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
