@@ -363,6 +363,55 @@ hr {
   max-width: 100%;
 }
 
+/* App Overview  */
+
+.app-overview {
+  padding: 0 22px;
+}
+
+.app-overview > p {
+  font-weight: 500;
+  font-size: 2.907rem;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.app-overview > div {
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box3"
+    "box4 box5";
+  column-gap: 12.84px;
+  row-gap: 11.61px;
+}
+
+.app-overview .img-container img {
+  width: 100%;
+}
+
+.app-overview .box-1 {
+  grid-area: box1;
+}
+
+.app-overview .box-2 {
+  grid-area: box2;
+}
+
+.app-overview .box-3 {
+  grid-area: box3;
+}
+
+.app-overview .box-4 {
+  grid-area: box4;
+}
+
+.app-overview .box-5 {
+  grid-area: box5;
+}
 /* Main Section End */
 
 /* Utilities */
@@ -505,5 +554,22 @@ hr {
   .info-members {
     margin-top: 289px;
     margin-bottom: 310px;
+  }
+
+  .app-overview > p {
+    font-size: 6.338rem;
+    margin-bottom: 50px;
+  }
+
+  .app-overview > div {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "box1 box3 box3"
+      "box5 box4 box2";
+    column-gap: 20.81px;
+    row-gap: 28px;
+    padding-left: 94px;
+    padding-right: 86px;
   }
 }
