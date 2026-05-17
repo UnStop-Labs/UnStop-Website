@@ -347,6 +347,22 @@ hr {
   width: 100%;
 }
 
+/* Members Section */
+
+.info-members {
+  margin-top: 124.86px;
+  margin-bottom: 81.2px;
+}
+
+.img-container {
+  width: 100%;
+  text-align: center;
+}
+
+.img-container img {
+  max-width: 100%;
+}
+
 /* Main Section End */
 
 /* Utilities */
@@ -484,5 +500,10 @@ hr {
   .info-partners .partners .logo-dropbox {
     min-width: 200px;
     max-width: 200px;
+  }
+
+  .info-members {
+    margin-top: 289px;
+    margin-bottom: 310px;
   }
 }
