@@ -15,13 +15,15 @@
 
 body {
   background-color: var(--color-black);
+  color: var(--color-white);
   margin: 0;
   padding: 0;
+  font-family: var(--font-primary);
 }
 
 /* header start */
 header {
-  border-bottom: 0.6px;
+  border-width: 0 0 0.6px 0;
   border-style: solid;
   border-color: var(--color-white);
   padding: 25px 19px;
@@ -47,7 +49,7 @@ nav ul {
   margin: 0;
 }
 
-nav .brand-name {
+.brand-name {
   font-family: var(--font-secondary);
   font-weight: bold;
   font-size: 2rem;
@@ -81,7 +83,10 @@ nav .container-control {
 }
 
 nav .link,
-.container-control button {
+.container-control button,
+.section-hero button,
+.section-hero .container-link a,
+.section-hero .info p {
   font: var(--font-primary);
   padding: 6.49px 27.81px;
   border: 0.43px solid;
@@ -105,15 +110,208 @@ nav .link {
   font-size: 1.609rem;
   color: var(--color-white);
   background-color: transparent;
+  line-height: 29.07px;
 }
 
-.container-control button .text {
+.container-control button .text,
+.section-hero .container-link button .text {
   margin-right: 5px;
 }
 
 /* header end */
 
-@media screen and (min-width: 1000px) {
+/* Main Section Start */
+
+.section-hero {
+  margin: 32px 0 93px;
+}
+
+.section-hero .logo {
+  width: 66px;
+  height: 41.11px;
+}
+
+.section-hero .brand-name {
+  display: none;
+  font-size: 4.887rem;
+}
+
+.section-hero .description {
+  font-size: 3.333rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-hero .part-first {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.section-hero .part-second {
+  font-family: var(--font-secondary);
+  font-weight: bold;
+}
+
+.section-hero .intro,
+.section-hero .container-link,
+.section-hero > .info {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.section-hero > .info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 58.91px;
+}
+
+.section-hero .container-link {
+  display: flex;
+  gap: 13.3px;
+  margin-top: 56px;
+  margin-bottom: 109px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section-hero .intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 23.18px;
+  margin-top: 35.37px;
+}
+
+.section-hero .container-link button {
+  margin-right: 13.3px;
+  display: flex;
+  gap: 12.66px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-hero .container-link a {
+  display: inline-block;
+}
+
+.section-hero .container-link button,
+.section-hero .container-link a {
+  color: var(--color-white);
+  background-color: transparent;
+  font-size: 1.31rem;
+  line-height: 2.418rem;
+  padding: 5.27px 27.79px;
+  border-width: 0.38px;
+}
+
+.section-hero button img {
+  width: 6.29px;
+  height: 12.16px;
+}
+
+.section-hero .info p {
+  font-size: 1.229rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.7);
+
+  padding: 2.68px 16.69px;
+  border-width: 0.37px;
+}
+
+.rectangle {
+  display: inline-block;
+  background-color: rgba(52, 206, 95, 1);
+  border: none;
+  margin-right: 14.9px;
+  width: 7.51px;
+  height: 7.51px;
+}
+
+.data,
+.data .data-info {
+  display: flex;
+}
+
+hr {
+  border: 0.4px solid rgba(255, 255, 255, 0.6);
+}
+
+.data {
+  justify-content: center;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.data-info {
+  gap: 21.93px;
+  padding: 0 21.55px;
+  padding-top: 21.55px;
+  padding-bottom: 25.28px;
+
+  flex: 50%;
+}
+
+.data-info img {
+  margin-top: 4px;
+}
+
+.icon-star {
+  width: 28.39px;
+  height: 28.39px;
+}
+
+.icon-meter {
+  width: 28.49px;
+  height: 22.82px;
+}
+
+.icon-graph {
+  width: 22.82px;
+  height: 22.82px;
+}
+
+.icon-toggle {
+  width: 30.81px;
+  height: 16.43px;
+}
+
+.data-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.56px;
+}
+
+.data-info div p {
+  margin: 0;
+}
+
+.data-info .value {
+  font-size: 2.122rem;
+}
+
+.data-info .title {
+  font-size: 1.516rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.border-info-left {
+  border-left: 0.52px solid rgba(255, 255, 255, 0.6);
+}
+.border-info-bottom {
+  border-bottom: 0.52px solid rgba(255, 255, 255, 0.6);
+}
+/* Main Section End */
+
+/* Utilities */
+.m-0 {
+  margin: 0;
+}
+
+@media screen and (min-width: 800px) {
   header {
     padding: 23.99px 51px 23.99px 83.99px;
   }
@@ -123,5 +321,102 @@ nav .link {
   .nav-desktop {
     display: flex;
     justify-content: space-between;
+  }
+
+  .section-hero {
+    margin: 106px 0 187px;
+  }
+
+  .section-hero .logo {
+    width: 109.87px;
+    height: 68.44px;
+  }
+
+  .section-hero .brand-name {
+    display: block;
+  }
+
+  .section-hero .description {
+    font-size: 5.964rem;
+    font-size: 3.333rem;
+    display: block;
+  }
+
+  .section-hero .container-link {
+    margin-top: 79.74px;
+    margin-bottom: 106.02px;
+    gap: 17.88px;
+  }
+
+  .section-hero > .info {
+    margin-bottom: 62px;
+  }
+
+  .data {
+    flex-wrap: nowrap;
+    gap: 40px;
+    width: 70%;
+  }
+
+  .section-hero .intro,
+  .section-hero .container-link,
+  .section-hero > .info {
+    padding: 23.99px 51px 23.99px 83.99px;
+  }
+
+  .section-hero .container-link button,
+  .section-hero .container-link a {
+    font-size: 1.918rem;
+    padding: 7.72px 40.68px;
+    line-height: 35.4px;
+    border-width: 0.55px;
+  }
+
+  .section-hero .info p {
+    font-size: 1.836rem;
+    padding: 4px 26px;
+    border-width: 0.55px;
+  }
+
+  .rectangle {
+    width: 11px;
+    height: 11px;
+  }
+
+  .data-info .value {
+    font-size: 2.325rem;
+  }
+
+  .data-info .title {
+    font-size: 1.661rem;
+  }
+
+  .data-info img {
+    width: 31.12px;
+    height: 26px;
+  }
+
+  .border-info-bottom {
+    border-bottom: none;
+  }
+
+  .icon-star {
+    width: 31.11px;
+    height: 31.11px;
+  }
+
+  .icon-meter {
+    width: 31.22px;
+    height: 25.01px;
+  }
+
+  .icon-graph {
+    width: 25.01px;
+    height: 25.01px;
+  }
+
+  .icon-toggle {
+    width: 33.76px;
+    height: 18px;
   }
 }
