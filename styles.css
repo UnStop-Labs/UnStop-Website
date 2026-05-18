@@ -128,6 +128,10 @@ nav .link a {
 
 .section-hero {
   margin: 32px 0 93px;
+  background-image: url("/assets/images/space.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 0px;
 }
 
 .section-hero .logo {
@@ -211,6 +215,11 @@ footer a {
   line-height: 2.418rem;
   padding: 5.27px 27.79px;
   border-width: 0.38px;
+}
+
+.section-hero .container-link button,
+.section-hero .container-link a {
+  background-color: var(--color-black);
 }
 
 .section-hero button img {
@@ -993,5 +1002,11 @@ footer .overlap-circle {
     line-height: 36.32px;
     color: rgba(169, 169, 169, 1);
     margin-top: 50.28px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .section-hero {
+    background-position: center top -250px;
   }
 }
