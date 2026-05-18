@@ -366,7 +366,7 @@ hr {
 /* App Overview  */
 
 .app-overview {
-  padding: 0 22px;
+  padding: 0 32px;
 }
 
 .app-overview > p {
@@ -374,6 +374,7 @@ hr {
   font-size: 2.907rem;
   margin-top: 0;
   margin-bottom: 24px;
+  margin-left: 7px;
 }
 
 .app-overview > div {
@@ -412,6 +413,25 @@ hr {
 .app-overview .box-5 {
   grid-area: box5;
 }
+
+/* Testimonials Section */
+
+.testimonials > p {
+  font-weight: 500;
+  font-size: 2.907rem;
+  color: rgba(241, 241, 243, 1);
+  text-align: center;
+  margin-top: 78.07px;
+  margin-bottom: 39px;
+}
+
+.testimonials .img-large {
+  display: none;
+}
+
+.testimonials img {
+  width: 100%;
+}
 /* Main Section End */
 
 /* Utilities */
@@ -424,8 +444,22 @@ hr {
 .opacity-3 {
   opacity: 0.3;
 }
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 395px) {
+  .testimonials .img-small {
+    display: none;
+  }
+  .testimonials .img-large {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1050px) {
   header {
     padding: 23.99px 51px 23.99px 83.99px;
   }
@@ -556,9 +590,14 @@ hr {
     margin-bottom: 310px;
   }
 
+  .app-overview {
+    padding: 0 89px;
+  }
+
   .app-overview > p {
     font-size: 6.338rem;
     margin-bottom: 50px;
+    padding: 0;
   }
 
   .app-overview > div {
@@ -571,5 +610,13 @@ hr {
     row-gap: 28px;
     padding-left: 94px;
     padding-right: 86px;
+  }
+
+  .testimonials > p {
+    font-size: 5.263rem;
+    line-height: 54.6px;
+    letter-spacing: -0.55px;
+    margin-top: 364px;
+    margin-bottom: 108.82px;
   }
 }
