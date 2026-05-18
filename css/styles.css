@@ -25,7 +25,7 @@ body {
 header {
   border-width: 0 0 0.6px 0;
   border-style: solid;
-  border-color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.6);
   padding: 25px 19px;
 }
 
@@ -886,7 +886,6 @@ footer .overlap-circle {
     visibility: visible;
     position: relative;
     z-index: 1;
-    /* padding-bottom: 127.82px; */
   }
 
   .bg-img-container::before {
@@ -905,6 +904,10 @@ footer .overlap-circle {
 
   .blogs {
     padding: 176px 144px 132px;
+  }
+
+  .blogs-img-container {
+    gap: 24px;
   }
 
   .blogs h2 {
