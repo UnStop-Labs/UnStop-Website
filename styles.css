@@ -620,7 +620,7 @@ footer .mobile-links a {
 
 footer .circle {
   margin: 0 auto;
-  max-width: 296.25px;
+  width: 65%;
   height: 209.34px;
   border-radius: 50%;
   background-color: rgba(70, 70, 70, 1);
@@ -857,8 +857,7 @@ footer .overlap-circle {
   }
 
   details {
-    margin-bottom: 19.43px;
-    padding: 20.43;
+    padding: 20.34px;
   }
 
   details > summary {
@@ -871,11 +870,11 @@ footer .overlap-circle {
   }
 
   details > p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .bg-img-container {
-    display: visible;
+    visibility: visible;
     position: relative;
     z-index: 1;
     /* padding-bottom: 127.82px; */
@@ -890,7 +889,7 @@ footer .overlap-circle {
     bottom: 0;
     background-image: url("/assets/images/bg-image.png");
     background-size: cover;
-    background-position: center;
+    background-position: 20%;
     opacity: 0.7;
     z-index: -1;
   }
