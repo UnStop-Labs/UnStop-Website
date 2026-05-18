@@ -450,6 +450,66 @@ hr {
   width: 100%;
 }
 
+/* FAQ Section */
+
+.faq {
+  padding: 0 24px 0 20px;
+}
+
+.faq > h2 {
+  font-weight: 500;
+  margin-top: 104.16px;
+  margin-bottom: 28px;
+  font-size: 2.907rem;
+}
+
+details {
+  margin-bottom: 10.1px;
+  background-color: var(--color-black);
+  border: 0.65px solid rgba(212, 228, 254, 0.19);
+  padding: 11.13px;
+}
+
+details > p {
+  font-size: 1rem;
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+
+  font-size: 1.132rem;
+  line-height: 15.71px;
+  color: rgba(252, 253, 255, 0.7);
+}
+
+/* Remove default arrow for WebKit browsers */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Fixed version with position properties */
+details > summary::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+details[open] > summary::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.bg-img-container {
+  visibility: none;
+}
+
 /* Main Section End */
 
 /* Utilities */
@@ -645,5 +705,56 @@ hr {
   .team > h2 {
     font-size: 6.338rem;
     margin: 364px 0 34px;
+  }
+
+  .faq {
+    padding: 0 164.71px 0 113px;
+  }
+
+  .faq > h2 {
+    font-size: 4.152rem;
+    line-height: 56.82px;
+    letter-spacing: -0.5px;
+    margin-top: 319.52px;
+    margin-bottom: 39.15px;
+  }
+
+  details {
+    margin-bottom: 19.43px;
+    padding: 20.43;
+  }
+
+  details > summary {
+    font-size: 2.1rem;
+    line-height: 29.14px;
+  }
+
+  details > summary::before {
+    font-size: 1.5rem;
+  }
+
+  details > p {
+    font-size: 1.6rem;
+  }
+
+  .bg-img-container {
+    display: visible;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 127.82px;
+  }
+
+  .bg-img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/assets/images/bg-image.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
   }
 }
