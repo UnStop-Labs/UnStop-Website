@@ -311,7 +311,7 @@ hr {
 
 /* Partner Section */
 
-.info-partners > p {
+.info-partners > h2 {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.35px;
   text-align: center;
@@ -319,6 +319,7 @@ hr {
   margin-top: 0;
   line-height: 9.98px;
   margin-bottom: 33.69px;
+  font-weight: 400;
 }
 
 .partners {
@@ -369,7 +370,7 @@ hr {
   padding: 0 32px;
 }
 
-.app-overview > p {
+.app-overview > h2 {
   font-weight: 500;
   font-size: 2.907rem;
   margin-top: 0;
@@ -416,7 +417,7 @@ hr {
 
 /* Testimonials Section */
 
-.testimonials > p {
+.testimonials > h2 {
   font-weight: 500;
   font-size: 2.907rem;
   color: rgba(241, 241, 243, 1);
@@ -439,7 +440,7 @@ hr {
   padding: 0 24px;
 }
 
-.team > p {
+.team > h2 {
   font-size: 2.907rem;
   font-weight: 500;
   margin: 79px 0 24px;
@@ -585,7 +586,7 @@ hr {
     height: 18px;
   }
 
-  .info-partners > p {
+  .info-partners > h2 {
     line-height: 27.75px;
     font-size: 3.2rem;
     margin-top: 0;
@@ -611,7 +612,7 @@ hr {
     padding: 0 89px;
   }
 
-  .app-overview > p {
+  .app-overview > h2 {
     font-size: 6.338rem;
     margin-bottom: 50px;
     padding: 0;
@@ -629,7 +630,7 @@ hr {
     padding-right: 86px;
   }
 
-  .testimonials > p {
+  .testimonials > h2 {
     font-size: 5.263rem;
     line-height: 54.6px;
     letter-spacing: -0.55px;
@@ -641,7 +642,7 @@ hr {
     padding: 0 93px 0 97px;
   }
 
-  .team > p {
+  .team > h2 {
     font-size: 6.338rem;
     margin: 364px 0 34px;
   }
