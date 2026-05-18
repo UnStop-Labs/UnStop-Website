@@ -453,7 +453,7 @@ hr {
 /* FAQ Section */
 
 .faq {
-  padding: 0 24px 0 20px;
+  padding: 0 24px 61px 20px;
 }
 
 .faq > h2 {
@@ -508,6 +508,46 @@ details[open] > summary::before {
 
 .bg-img-container {
   visibility: none;
+}
+
+/* Blogs Section */
+
+.blogs {
+  padding: 0 24px;
+}
+
+.blogs h2 {
+  font-weight: 500;
+  margin-top: 0;
+  font-size: 2.907rem;
+  margin-bottom: 39px;
+}
+
+.blogs-img-container {
+  display: flex;
+  gap: 9.88px;
+  overflow: hidden;
+}
+
+.blogs .img-link {
+  width: 171px;
+  margin-top: 52.61px;
+}
+
+.blogs .img-link-desktop {
+  display: none;
+}
+
+.blogs img {
+  width: 100%;
+}
+
+.blogs-img-container > div {
+  flex: 1 0 161px;
+}
+
+.img-blog-nav {
+  display: none;
 }
 
 /* Main Section End */
@@ -708,7 +748,7 @@ details[open] > summary::before {
   }
 
   .faq {
-    padding: 0 164.71px 0 113px;
+    padding: 0 164.71px 127.82px 113px;
   }
 
   .faq > h2 {
@@ -741,7 +781,7 @@ details[open] > summary::before {
     display: visible;
     position: relative;
     z-index: 1;
-    padding-bottom: 127.82px;
+    /* padding-bottom: 127.82px; */
   }
 
   .bg-img-container::before {
@@ -756,5 +796,35 @@ details[open] > summary::before {
     background-position: center;
     opacity: 0.7;
     z-index: -1;
+  }
+
+  .blogs {
+    padding: 176px 144px 132px;
+  }
+
+  .blogs h2 {
+    font-size: 4.33rem;
+    line-height: 52.8px;
+    letter-spacing: -0.96px;
+    margin-bottom: 80px;
+  }
+
+  .blogs .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-blog-nav {
+    display: block;
+    width: 519.5px;
+  }
+
+  .blogs .img-link {
+    display: none;
+  }
+
+  .blogs .img-link-desktop {
+    display: block;
+    margin-top: 68.2px;
   }
 }
