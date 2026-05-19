@@ -671,6 +671,209 @@ footer .social > span {
 
 /* Footer Section End */
 
+.roadmap,
+.about-page .about {
+  border-bottom: 0.6px solid rgba(255, 255, 255, 0.6);
+}
+
+.roadmap h1,
+.about-page .about h1 {
+  font-family: var(--font-secondary);
+  font-size: 2.711rem;
+  margin: 0;
+  padding: 54px 20px 45px;
+}
+
+.container-events {
+  padding: 50px 10px 99px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  gap: 30.01px;
+  padding: 47px 35.2px 46px;
+  border: 0.55px solid;
+  border-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.5)
+    )
+    1;
+}
+
+.event-info > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-info .title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 2.289rem;
+}
+
+.event-info .year {
+  font-weight: 700;
+}
+
+.event-info.active .year {
+  color: rgba(62, 187, 255, 1);
+}
+
+.event-info .schedule,
+.event-description {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.event .arrow-down {
+  width: 9px;
+  height: 4.5px;
+}
+
+.event .arrow-down img,
+.container-events img {
+  width: 100%;
+  height: 100%;
+}
+
+.event .badge {
+  color: rgba(52, 206, 95, 1);
+  background-color: var(--color-black);
+  border: 0.46px solid;
+  display: inline-block;
+  border-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.5)
+    )
+    1;
+  padding: 3px 23.1px;
+  line-height: 17.52px;
+  font-size: 0.949rem;
+}
+
+.event .rectangle {
+  display: none;
+}
+
+.event-info .schedule {
+  font-size: 1.196rem;
+  margin-top: 9.99px;
+}
+
+.event-description {
+  font-size: 1.383rem;
+  font-weight: 300;
+}
+
+.container-events .border-img {
+  display: none;
+}
+
+.rotated-rectangle {
+  display: none;
+}
+
+.about-page .description p {
+  font-size: 1.234rem;
+  line-height: 18.13px;
+  letter-spacing: -0.66px;
+  color: rgba(233, 233, 233, 1);
+}
+
+.about-page .intro-container {
+  padding: 27px 32px;
+}
+
+.about-page .intro {
+  padding: 25px 28px;
+  background: linear-gradient(
+    to bottom,
+    rgba(14, 14, 14, 0.4),
+    rgba(44, 44, 44, 0.4),
+    rgba(43, 43, 43, 0.4),
+    rgba(31, 31, 31, 0.4)
+  );
+}
+
+.about-page .message-welcome {
+  font-weight: 700;
+  font-size: 1.224rem;
+  line-height: 18.13px;
+  color: rgba(162, 222, 255, 1);
+  box-shadow: 1.89px 0.76px 1.89px 0 rgba(0, 0, 0, 0.25);
+  margin-top: 23.01px;
+  margin-bottom: 0;
+}
+
+.about-page .products-info > h2 {
+  font-weight: 700;
+  font-size: 2.594rem;
+  line-height: 32.86px;
+  letter-spacing: -1.38px;
+  margin: 0;
+}
+
+.about-page .brand {
+  color: rgba(162, 222, 255, 1);
+  color: rgba(62, 187, 255, 1);
+}
+
+.about-page .products-info {
+  padding: 35px;
+}
+
+.about-page .products-info > div {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(8, 8, 8, 1);
+}
+
+.about-page .products-info > div > div {
+  padding: 0 4px;
+  width: 50%;
+}
+
+.about-page .product {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.16px;
+  padding: 15.43px 15px;
+  background: linear-gradient(
+    to bottom,
+    rgba(34, 34, 34, 0.3),
+    rgba(26, 26, 26, 0.3),
+    rgba(49, 49, 49, 0.3),
+    rgba(53, 53, 53, 0.3)
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.about-page .product .img {
+  width: 33px;
+  height: 33px;
+}
+
+.about-page .product .text {
+  font-weight: 700;
+  font-size: 1.546rem;
+  line-height: 18.78px;
+  letter-spacing: -0.84px;
+  color: rgba(233, 233, 233, 1);
+}
+
+.product-large {
+  display: none;
+}
+
 /* Utilities */
 .m-0 {
   margin: 0;
@@ -685,6 +888,9 @@ footer .social > span {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+.img-100 {
+  width: 100%;
 }
 
 @media screen and (min-width: 395px) {
@@ -1018,6 +1224,165 @@ footer .social > span {
     line-height: 36.32px;
     color: rgba(169, 169, 169, 1);
     margin-top: 50.28px;
+  }
+
+  .container-events {
+    position: relative;
+    padding: 131px 86px 0;
+    margin-bottom: 223px;
+    overflow: hidden;
+  }
+  .event {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    padding: 46px 0;
+    position: relative;
+  }
+
+  .container-events .border-img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% - 100px);
+  }
+
+  .event > div {
+    flex: 1;
+  }
+
+  .event-info {
+    padding: 0 97px;
+  }
+
+  .event .arrow-down {
+    display: none;
+  }
+
+  .event-info .title {
+    font-size: 3.828rem;
+  }
+
+  .event-info .schedule {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .event .badge {
+    line-height: 29.3px;
+    font-size: 1.587rem;
+    margin-top: 37px;
+  }
+
+  .event .rectangle {
+    width: 9.1px;
+    height: 9.1px;
+    display: inline-block;
+  }
+
+  .event-description {
+    font-size: 2.5rem;
+    padding: 0 92px;
+  }
+
+  .rotated-rectangle {
+    display: inline-block;
+    position: absolute;
+    width: 12.07px;
+    height: 12.07px;
+    bottom: -6.6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .roadmap,
+  .about-page .about {
+    padding: 132px 0;
+    text-align: center;
+  }
+
+  .roadmap h1,
+  .about-page .about h1 {
+    font-family: var(--font-secondary);
+    margin: 0;
+
+    padding: 0;
+    font-size: 4.887rem;
+  }
+
+  .about-page .intro-container {
+    padding: 101px 116px 100px;
+  }
+
+  .about-page .intro {
+    padding: 118px 127px;
+  }
+
+  .about-page .description p,
+  .about-page .message-welcome {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .about-page .description p {
+    font-size: 3.268rem;
+    line-height: 48px;
+    letter-spacing: -1.75px;
+  }
+
+  .about-page .message-welcome {
+    font-size: 3.24rem;
+    line-height: 48px;
+    box-shadow: 1.89px 0.76px 1.89px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 61px;
+  }
+
+  .about-page .products-info {
+    padding: 80px 85px 125px 138px;
+    border-top: 0.6px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 0.6px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .about-page .products-info > div {
+    padding: 35px 38px;
+  }
+
+  .about-page .products-info > h2 {
+    font-size: 4.519rem;
+    line-height: 57.24px;
+    letter-spacing: -2.4px;
+  }
+
+  .about-page .product {
+    gap: 10.5px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  .about-page .products-info > div > div {
+    width: 25%;
+  }
+
+  .about-page .product .img {
+    width: 100%;
+    max-width: 49px;
+    height: 49px;
+  }
+
+  .about-page .product .text {
+    font-size: 2.305rem;
+    line-height: 28px;
+    letter-spacing: -1.25px;
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .about-page .products-info > div > div {
+    width: 20%;
+  }
+
+  .product-large {
+    display: block;
   }
 }
 
