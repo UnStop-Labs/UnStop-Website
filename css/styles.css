@@ -791,7 +791,7 @@ footer .social > span {
   padding: 27px 32px;
 }
 
-.about-page .intro {
+.intro-container .intro {
   padding: 25px 28px;
   background: linear-gradient(
     to bottom,
@@ -874,6 +874,67 @@ footer .social > span {
   display: none;
 }
 
+.product-demo {
+  padding: 47px 17px 44.7px;
+}
+
+.product-demo .intro h1 {
+  font-weight: 700;
+}
+
+.product-demo .description {
+  text-align: center;
+}
+
+.product-demo .img-small,
+.product-demo .img-large {
+  position: relative;
+}
+
+.product-demo .img-small {
+  display: block;
+}
+
+.product-demo .img-large {
+  display: none;
+}
+
+.product-demo img {
+  width: 100%;
+}
+
+.product-demo h2 {
+  font-weight: 700;
+  font-size: 1.388rem;
+  line-height: 18.26px;
+  letter-spacing: -0.29px;
+  margin: 0;
+}
+
+.product-demo-intro {
+  text-align: center;
+}
+
+.product-demo-intro p {
+  font-size: 0.748rem;
+  line-height: 8.52px;
+  color: rgba(169, 169, 173, 1);
+  margin-top: 4.28px;
+  margin-bottom: 17px;
+}
+
+.product-demo a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.587rem;
+  line-height: 9.74px;
+  text-decoration: none;
+  color: rgba(121, 175, 250, 1);
+  position: absolute;
+  right: 12px;
+  bottom: 20%;
+}
+
 /* Utilities */
 .m-0 {
   margin: 0;
@@ -898,6 +959,16 @@ footer .social > span {
     display: none;
   }
   .img-large {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .product-demo .img-small {
+    display: none;
+  }
+
+  .product-demo .img-large {
     display: block;
   }
 }
@@ -1315,7 +1386,7 @@ footer .social > span {
     padding: 101px 116px 100px;
   }
 
-  .about-page .intro {
+  .intro-container .intro {
     padding: 118px 127px;
   }
 
@@ -1373,6 +1444,29 @@ footer .social > span {
     font-size: 2.305rem;
     line-height: 28px;
     letter-spacing: -1.25px;
+  }
+
+  .product-demo {
+    padding: 102px 151px 154px 73px;
+  }
+
+  .product-demo h2 {
+    font-size: 4.56rem;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+  }
+
+  .product-demo-intro p {
+    font-size: 1.8rem;
+    line-height: 28px;
+    margin-top: 16.5px;
+    margin-bottom: 40px;
+  }
+
+  .product-demo a {
+    font-size: 1.6rem;
+    line-height: 32px;
+    bottom: 17%;
   }
 }
 
