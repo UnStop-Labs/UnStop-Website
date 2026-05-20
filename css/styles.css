@@ -739,7 +739,8 @@ footer .social > span {
 .event .arrow-down img,
 .container-events img,
 .supported-variants .icon img,
-.quick-links img {
+.quick-links img,
+aside .navigation img {
   width: 100%;
   height: 100%;
 }
@@ -1027,10 +1028,11 @@ footer .social > span {
   font-size: 1.807rem;
   line-height: 21.75px;
   letter-spacing: -0.45px;
+  margin-top: 0;
 }
 
 .docs-page .intro {
-  padding: 40px 52.71px 44px 28px;
+  padding: 20px 52.71px 44px 28px;
 }
 
 .docs-page .intro > p {
@@ -1187,6 +1189,128 @@ footer .social > span {
 .quick-links .img {
   width: 27.4px;
   height: 27.4px;
+}
+
+.docs-page .sub-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 19px;
+}
+
+.docs-page .sub-menu button,
+.docs-page .sub-menu ol {
+  padding: 0;
+}
+
+.docs-page .sub-menu button {
+  background-color: transparent;
+  border: none;
+}
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  padding: 12px 16px;
+  margin: 0;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Separator */
+.breadcrumb li:not(:last-child)::after {
+  content: "›";
+  margin: 0 8px;
+  color: #6c757d;
+  font-size: 1.4rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  transition: color 0.2s;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.4rem;
+}
+
+aside .brand-name {
+  display: none;
+}
+
+.parent aside {
+  flex: 0 0 323px;
+  border-right: 0.4px solid var(--color-white);
+}
+
+.parent {
+  display: flex;
+}
+
+.parent aside {
+  flex: 0 0 200px;
+  border-right: 0.4px solid var(--color-white);
+}
+
+aside .navigation {
+  padding: 0 15px;
+}
+
+aside .navigation p,
+aside .navigation a {
+  padding: 0 10px;
+  margin-bottom: 3px;
+}
+
+aside .navigation p,
+aside .navigation .name,
+aside .navigation a {
+  font-size: 1.324rem;
+  line-height: 27.83px;
+}
+
+aside .navigation p {
+  font-weight: 500;
+}
+
+aside .navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside .navigation li.active {
+  background-color: var(--color-white);
+}
+
+aside .navigation a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+}
+
+aside .navigation .name {
+  color: rgba(160, 165, 162, 1);
+}
+
+aside .navigation .icon {
+  display: inline-block;
+  width: 17.56px;
+  height: 17.56px;
+}
+
+aside .navigation > div {
+  padding-left: 0.59px;
+}
+
+.get-start-links {
+  margin: 36.59px 0 20.59px;
 }
 
 /* Utilities */
@@ -1811,7 +1935,7 @@ footer .social > span {
   }
 
   .docs-page .intro {
-    padding: 84.54px 269px 0 97px;
+    padding: 84.54px 97px 0;
   }
 
   .docs-page h1 {
@@ -1855,7 +1979,7 @@ footer .social > span {
   }
 
   .info-operation {
-    padding: 110.75px 269px 133.59px 97px;
+    padding: 110.75px 97px 133.59px;
   }
 
   .info-operation > div {
@@ -1890,7 +2014,7 @@ footer .social > span {
   }
 
   .supported-variants {
-    padding: 0 269px 119px 97px;
+    padding: 0 97px 119px;
   }
 
   .supported-variants > p {
@@ -1922,7 +2046,7 @@ footer .social > span {
   }
 
   .quick-links {
-    padding: 0 269px 32.66px 97px;
+    padding: 0 97px 32.66px;
   }
 
   .supported-variants .icon {
@@ -1964,6 +2088,65 @@ footer .social > span {
 
   .quick-links .description {
     color: rgba(160, 165, 162, 1);
+  }
+
+  .docs-page .sub-menu {
+    display: none;
+  }
+
+  .parent aside {
+    flex: 0 0 323px;
+  }
+
+  aside .brand-name {
+    display: block;
+    font-size: 2.644rem;
+    padding: 23px 0;
+    border-bottom: 0.28px solid var(--color-white);
+    text-align: center;
+  }
+
+  aside .navigation {
+    padding: 0 28px;
+  }
+
+  aside .navigation p,
+  aside .navigation a {
+    padding: 0 18.56px;
+    margin-bottom: 6.96px;
+  }
+
+  aside .navigation p {
+    font-weight: 700;
+    font-size: 1.624rem;
+    line-height: 27.83px;
+  }
+
+  aside .navigation li.active {
+    background-color: var(--color-white);
+  }
+
+  aside .navigation a {
+    gap: 13.92px;
+    text-decoration: none;
+  }
+
+  aside .navigation .name {
+    font-size: 1.624rem;
+    line-height: 27.83px;
+  }
+
+  aside .navigation .icon {
+    width: 18.56px;
+    height: 18.56px;
+  }
+
+  aside .navigation > div {
+    padding-left: 18.59px;
+  }
+
+  .get-start-links {
+    margin: 56.59px 0 40.59px;
   }
 }
 
