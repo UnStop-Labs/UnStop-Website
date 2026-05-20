@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Docs</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-mobile">
+          <span class="icon-hamburger"
+            ><img src="/assets/icons/menu.png" alt=""
+          /></span>
+          <p class="brand-name">UNSTOP LABS</p>
+        </div>
+        <div class="nav-desktop">
+          <div>
+            <img class="logo" src="/assets/icons/logo.png" alt="" />
+          </div>
+
+          <ul class="container-link">
+            <li class="link"><a href="/about.html">About</a></li>
+            <li class="link"><a href="/roadmap.html">Roadmap</a></li>
+            <li class="link"><a href="/whitepaper.html">Whitepaper</a></li>
+            <li class="link"><a href="/docs.html">Docs</a></li>
+          </ul>
+
+          <div class="container-control">
+            <ul class="container-social">
+              <li>
+                <img src="/assets/icons/twitter.png" alt="" />
+              </li>
+              <li>
+                <img src="/assets/icons/discord.png" alt="" />
+              </li>
+              <li>
+                <img src="/assets/icons/github.png" alt="" />
+              </li>
+            </ul>
+
+            <button>
+              <span class="text">Enter App</span>
+              <span><img src="/assets/icons/arrow-right.png" alt="" /></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="docs-page">
+      <section class="intro">
+        <h1>The Layer of Autonomous Space Intelligence</h1>
+        <p>
+          Unstop Labs is a decentralized genomic intelligence network operating
+          as a sublayer of Bittensor
+        </p>
+
+        <p>
+          It functions as an AI-driven computation layer where distributed
+          agents analyze biological signals as if they were deep-space data
+          streams. Miners act as autonomous intelligence nodes, competing to
+          decode the most accurate genomic “signals” from raw sequencing inputs
+        </p>
+
+        <div class="info">
+          <img src="./assets/icons/icon-info.png" alt="" />
+          <p class="text">
+            The network powers a reward-driven intelligence economy where the
+            most accurate signal interpretation ear
+          </p>
+        </div>
+      </section>
+
+      <section class="info-operation">
+        <h2>How Unstop labs Operate</h2>
+        <div>
+          <div class="list">
+            <div class="title">
+              <p class="num">1</p>
+              <p class="text">Signal Acquisition</p>
+            </div>
+
+            <div class="description">
+              <div class="line">
+                <span></span>
+              </div>
+              <p>
+                Validators send miners a genomic region and aligned sequencing
+                reads (BAM) to analyze.
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="title">
+              <p class="num">2</p>
+              <p class="text">Variant Intelligence Computation</p>
+            </div>
+
+            <div class="description">
+              <div class="line">
+                <span></span>
+              </div>
+              <p>
+                Miners run one of the four supported variant callers with their
+                own tuned hyperparameters to produce variant calls (VCF) and
+                share their hyperparameter config with validators for scoring.
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="title">
+              <p class="num">3</p>
+              <p class="text">Orbital Validation Scoring</p>
+            </div>
+
+            <div class="description">
+              <div class="line">
+                <span></span>
+              </div>
+              <p>
+                Validators generate the VCF using the miner’s config and
+                benchmark against a truth set
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="supported-variants">
+        <h2>Supported Variant Callers</h2>
+        <p>
+          Minos supports <span>4 industry-standard tools</span>. Each guide
+          covers the tool’s algorithm, pipeline, and every tunable
+          hyperparameter.
+        </p>
+
+        <div class="variants">
+          <div>
+            <div class="icon">
+              <img src="./assets/icons/icon-command-line.png" alt="" />
+            </div>
+            <p class="title">GATK HaplotypeCaller</p>
+            <p class="description">
+              The Broad Institute’s flagship caller. Performs
+              <span>local de novo assembly</span> of haplotypes — Assembly-based
+              approach for haplotype-aware calling.
+            </p>
+          </div>
+
+          <div class="list-desktop">
+            <div class="icon">
+              <img src="./assets/icons/icon-command-line.png" alt="" />
+            </div>
+            <p class="title">Google DeepVariant</p>
+            <p class="description">
+              Deep learning variant caller. Converts pileups into
+              <span>CNN image classification</span> — platform-aware models for
+              WGS, WES, and PacBio.
+            </p>
+          </div>
+
+          <div>
+            <div class="icon">
+              <img src="./assets/icons/icon-command-line.png" alt="" />
+            </div>
+            <p class="title">FreeBayes</p>
+            <p class="description">
+              Bayesian haplotype-based caller with the
+              <span>most tunable priors</span> — toggle HWE, allele balance, and
+              contamination models independently.
+            </p>
+          </div>
+
+          <div class="list-desktop">
+            <div class="icon">
+              <img src="./assets/icons/icon-command-line.png" alt="" />
+            </div>
+            <p class="title">BCFtools</p>
+            <p class="description">
+              The fastest caller. Classic
+              <span>pileup-based approach</span> with a two-stage pipeline
+              giving independent control over data prep and genotyping.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-links">
+        <h2>Quick Links</h2>
+
+        <div>
+          <div>
+            <div class="img">
+              <img src="/assets/icons/icon-family-tree.png" alt="" />
+            </div>
+            <p class="name">Architecture</p>
+            <p class="description">How the subnet works end-to-end.</p>
+          </div>
+
+          <div>
+            <div class="img">
+              <img src="/assets/icons/icon-rocket.png" alt="" />
+            </div>
+            <p class="name">Quickstart</p>
+            <p class="description">How the subnet works end-to-end.</p>
+          </div>
+
+          <div>
+            <div class="img">
+              <img src="/assets/icons/github.png" alt="" />
+            </div>
+            <p class="name">GitHub</p>
+            <p class="description">How the subnet works end-to-end.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <div class="brand-info">
+          <div>
+            <img class="logo" src="/assets/icons/logo.png" alt="" />
+          </div>
+
+          <p class="brand-name">UNSTOP Labs</p>
+          <p class="intro font-inter">DeSpace with AI Data</p>
+
+          <a href="#" class="link-join">Join the Future</a>
+          <p class="info-copyright font-inter">©2026 UnStop Labs, Inc.</p>
+        </div>
+
+        <section class="desktop-links">
+          <div>
+            <p>Products</p>
+            <ul>
+              <li><a href="#">Genius</a></li>
+              <li><a href="#">Magician</a></li>
+              <li><a href="#">Automator</a></li>
+              <li><a href="#">UI-AI</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <p>Company</p>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="legal">
+            <div>
+              <p>Legal</p>
+              <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </div>
+
+            <div class="social">
+              <span>
+                <img src="/assets/icons/icon-discord.png" alt="" />
+              </span>
+              <span>
+                <img src="/assets/icons/icon-instagram.png" alt="" />
+              </span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <div class="circle"></div>
+      <div class="overlap-circle"></div>
+    </footer>
+  </body>
+</html>
