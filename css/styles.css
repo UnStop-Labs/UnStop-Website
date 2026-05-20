@@ -672,12 +672,14 @@ footer .social > span {
 /* Footer Section End */
 
 .roadmap,
-.about-page .about {
+.about-page .about,
+.whitepaper-page .title {
   border-bottom: 0.6px solid rgba(255, 255, 255, 0.6);
 }
 
 .roadmap h1,
-.about-page .about h1 {
+.about-page .about h1,
+.whitepaper-page .title h1 {
   font-family: var(--font-secondary);
   font-size: 2.711rem;
   margin: 0;
@@ -899,7 +901,8 @@ footer .social > span {
   display: none;
 }
 
-.product-demo img {
+.product-demo img,
+.whitepaper-page .info img {
   width: 100%;
 }
 
@@ -935,6 +938,87 @@ footer .social > span {
   bottom: 20%;
 }
 
+.overview {
+  padding: 45px 30px;
+}
+
+.overview h2,
+.whitepaper-page > .content > h2 {
+  font-size: 2.1rem;
+  margin: 0;
+}
+
+.overview h2 {
+  font-weight: 700;
+}
+
+.whitepaper-page > .content > h2 {
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.whitepaper-page > .content {
+  padding: 51px 23px 200px 28px;
+}
+
+.whitepaper-page > .content > p {
+  font-weight: 300;
+  font-size: 1.372rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.overview h2 span {
+  display: block;
+}
+
+.overview h2 span:first-of-type {
+  color: rgba(62, 186, 255, 1);
+}
+
+.overview .intro p,
+.overview > p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.overview .intro p {
+  font-size: 1.097rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 8.71px;
+  margin-bottom: 23.29px;
+}
+
+.overview > p {
+  font-weight: 300;
+  font-size: 1.372rem;
+}
+
+.whitepaper-page .info {
+  border-top: 0.33px solid rgba(255, 255, 255, 0.6);
+}
+
+.whitepaper-page .img-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.whitepaper-page .info .content div {
+  border-top: 0.33px solid rgba(255, 255, 255, 0.33);
+  border-bottom: 0.33px solid rgba(255, 255, 255, 0.33);
+  text-align: center;
+  padding: 21px 0;
+}
+
+.whitepaper-page .content .text {
+  font-size: 2.1rem;
+  margin: 0;
+}
+
+.whitepaper-page .content .sub-text {
+  font-size: 1.097rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10.28px;
+}
 /* Utilities */
 .m-0 {
   margin: 0;
@@ -1368,13 +1452,15 @@ footer .social > span {
   }
 
   .roadmap,
-  .about-page .about {
+  .about-page .about,
+  .whitepaper-page .title {
     padding: 132px 0;
     text-align: center;
   }
 
   .roadmap h1,
-  .about-page .about h1 {
+  .about-page .about h1,
+  .whitepaper-page .title h1 {
     font-family: var(--font-secondary);
     margin: 0;
 
@@ -1467,6 +1553,91 @@ footer .social > span {
     font-size: 1.6rem;
     line-height: 32px;
     bottom: 17%;
+  }
+
+  .overview {
+    padding: 118px 83px 150px 138px;
+    display: flex;
+    gap: 189px;
+  }
+
+  .overview h2,
+  .whitepaper-page > .content > h2 {
+    font-size: 3.828rem;
+  }
+
+  .overview .intro {
+    flex: 1;
+  }
+
+  .overview .intro p {
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .overview > p {
+    font-size: 2.5rem;
+    flex: 2;
+    margin: 0;
+  }
+
+  .whitepaper-page .info {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 0.33px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .whitepaper-page .img-container {
+    order: 2;
+    padding: 80px 144px;
+  }
+
+  .whitepaper-page .info .content,
+  .whitepaper-page .img-container {
+    flex: 1 1 100px;
+  }
+
+  .whitepaper-page .info img {
+    width: 467px;
+  }
+
+  .whitepaper-page .info .content {
+    border-right: 0.6px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .whitepaper-page .info .content div:first-of-type,
+  .whitepaper-page .info .content div:last-of-type {
+    border-top: none;
+  }
+
+  .whitepaper-page .info .content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 33.33%;
+  }
+
+  .whitepaper-page .content .text {
+    font-size: 3.828rem;
+  }
+
+  .whitepaper-page .content .sub-text {
+    font-size: 2rem;
+    margin-top: 16px;
+  }
+
+  .whitepaper-page > .content {
+    padding: 59px 157px 203px 158px;
+  }
+
+  .whitepaper-page > .content > h2 {
+    margin-bottom: 59px;
+    font-size: 3.828rem;
+  }
+
+  .whitepaper-page > .content > p {
+    font-size: 2.5rem;
   }
 }
 
