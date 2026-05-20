@@ -108,6 +108,10 @@ nav .link a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+nav .link a.active {
+  color: var(--color-white);
+}
+
 .container-control button {
   font-size: 1.609rem;
   color: var(--color-white);
@@ -592,10 +596,17 @@ footer .logo {
 footer .brand-name {
   margin-top: 16.81px;
   margin-bottom: 14.38px;
-  color: rgba(255, 255, 255, 0.72);
   font-weight: 500;
   font-size: 2.086rem;
   line-height: 21.57px;
+}
+
+nav a.brand-name,
+footer a.brand-name,
+footer .brand-logo {
+  text-decoration: none;
+  border: none;
+  padding: 0;
 }
 
 footer .intro {
@@ -732,8 +743,12 @@ footer .social > span {
 }
 
 .event .arrow-down {
-  width: 9px;
-  height: 4.5px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .event .arrow-down img,
@@ -1323,6 +1338,10 @@ aside .navigation > div {
   );
 }
 
+nav .container-link li.active {
+  color: var(--color-white);
+}
+
 /* Utilities */
 .m-0 {
   margin: 0;
@@ -1340,6 +1359,10 @@ aside .navigation > div {
 }
 .img-100 {
   width: 100%;
+}
+
+.hide {
+  display: none;
 }
 
 @media screen and (min-width: 395px) {

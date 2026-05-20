@@ -16,18 +16,22 @@
       <nav>
         <div class="nav-mobile">
           <span class="icon-hamburger"
-            ><img src="/assets/icons/menu.png" alt=""
-          /></span>
-          <p class="brand-name">UNSTOP LABS</p>
+            ><img src="/assets/icons/menu.png" alt="" />
+          </span>
+          <a href="/" class="brand-name">UNSTOP LABS</a>
         </div>
         <div class="nav-desktop">
           <div>
-            <img class="logo" src="/assets/icons/logo.png" alt="" />
+            <a href="/"
+              ><img class="logo" src="/assets/icons/logo.png" alt=""
+            /></a>
           </div>
 
           <ul class="container-link">
             <li class="link"><a href="/about.html">About</a></li>
-            <li class="link"><a href="/roadmap.html">Roadmap</a></li>
+            <li class="link">
+              <a class="active" href="/roadmap.html">Roadmap</a>
+            </li>
             <li class="link"><a href="/whitepaper.html">Whitepaper</a></li>
             <li class="link"><a href="/docs.html">Docs</a></li>
           </ul>
@@ -35,13 +39,19 @@
           <div class="container-control">
             <ul class="container-social">
               <li>
-                <img src="/assets/icons/twitter.png" alt="" />
+                <a href="#">
+                  <img src="/assets/icons/twitter.png" alt="" />
+                </a>
               </li>
               <li>
-                <img src="/assets/icons/discord.png" alt="" />
+                <a href="#">
+                  <img src="/assets/icons/discord.png" alt="" />
+                </a>
               </li>
               <li>
-                <img src="/assets/icons/github.png" alt="" />
+                <a href="#">
+                  <img src="/assets/icons/github.png" alt="" />
+                </a>
               </li>
             </ul>
 
@@ -53,6 +63,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <section class="roadmap">
         <h1>ROADMAP</h1>
@@ -70,9 +81,9 @@
                 <span class="name"> Neural Network Initialization</span>
               </p>
 
-              <div class="arrow-down">
+              <button class="arrow-down">
                 <img src="/assets/icons/arror-down.png" alt="" />
-              </div>
+              </button>
             </div>
             <p class="schedule">04 August 2026 — 09:00 AM</p>
 
@@ -82,7 +93,7 @@
             </p>
           </div>
 
-          <div class="event-description">
+          <div class="event-description hide">
             Activating the Core Intelligence System Deploy the foundational AI
             architecture and initialize adaptive learning models for autonomous
             processing.
@@ -101,14 +112,14 @@
                 <span class="name"> Orbital Data Integration</span>
               </p>
 
-              <div class="arrow-down">
+              <button class="arrow-down">
                 <img src="/assets/icons/arror-down.png" alt="" />
-              </div>
+              </button>
             </div>
             <p class="schedule">11 August 2026 — 01:30 PM</p>
           </div>
 
-          <div class="event-description">
+          <div class="event-description hide">
             Connecting Multi-Source Space Intelligence: Integrate satellite
             feeds, telemetry systems, and decentralized data pipelines into a
             unified platform.
@@ -127,14 +138,14 @@
                 <span class="name"> AI Agent Deployment</span>
               </p>
 
-              <div class="arrow-down">
+              <button class="arrow-down">
                 <img src="/assets/icons/arror-down.png" alt="" />
-              </div>
+              </button>
             </div>
             <p class="schedule">18 August 2026 — 03:00 PM</p>
           </div>
 
-          <div class="event-description">
+          <div class="event-description hide">
             Launching Autonomous Digital Operators Introduce intelligent AI
             agents capable of monitoring, analyzing, and optimizing space-based
             operations in real time.
@@ -153,14 +164,14 @@
                 <span class="name"> Interstellar Network Expansion</span>
               </p>
 
-              <div class="arrow-down">
+              <button class="arrow-down">
                 <img src="/assets/icons/arror-down.png" alt="" />
-              </div>
+              </button>
             </div>
             <p class="schedule">18 September 2026 — 08:30 PM</p>
           </div>
 
-          <div class="event-description">
+          <div class="event-description hide">
             Opening the Future of Autonomous Space Intelligence Officially
             launch the AI-powered space platform with live analytics, adaptive
             systems, and real-time intelligence.
@@ -186,7 +197,7 @@
             <p class="schedule">04 August 2026 — 09:00 AM</p>
           </div>
 
-          <div class="event-description">
+          <div class="event-description hide">
             Activating the Core Intelligence System Deploy the foundational AI
             architecture and initialize adaptive learning models for autonomous
             processing.
@@ -199,10 +210,12 @@
       <section>
         <div class="brand-info">
           <div>
-            <img class="logo" src="/assets/icons/logo.png" alt="" />
+            <a class="brand-logo" href="#">
+              <img class="logo" src="/assets/icons/logo.png" alt="" />
+            </a>
           </div>
 
-          <p class="brand-name">UNSTOP Labs</p>
+          <a class="brand-name">UNSTOP Labs</a>
           <p class="intro font-inter">DeSpace with AI Data</p>
 
           <a href="#" class="link-join">Join the Future</a>
@@ -254,5 +267,27 @@
       <div class="circle"></div>
       <div class="overlap-circle"></div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButtons = document.querySelectorAll(
+          ".event-info .arrow-down",
+        );
+
+        toggleButtons.forEach((button) => {
+          button.addEventListener("click", (e) => {
+            // Find the parent .event container
+            const eventContainer = button.closest(".event");
+
+            // Find the event description within the same .event
+            const eventDescription =
+              eventContainer.querySelector(".event-description");
+
+            // Toggle the hide class
+            eventDescription.classList.toggle("hide");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
