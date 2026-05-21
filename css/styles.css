@@ -559,9 +559,15 @@ details[open] > summary::before {
   display: none;
 }
 
-.blogs-card-container > div {
+.blogs-card-container > .blog-card {
   min-width: 161.41px;
   max-width: 161.41px;
+}
+
+a.blog-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .blog-card .blog-info {
@@ -2278,7 +2284,7 @@ nav .container-link li.active {
     gap: 24px;
   }
 
-  .blogs-card-container > div {
+  .blogs-card-container > .blog-card {
     min-width: 392px;
     max-width: 392px;
   }
