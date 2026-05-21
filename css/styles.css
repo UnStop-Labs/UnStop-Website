@@ -1512,7 +1512,7 @@ nav .container-link li.active {
 
   .info-members {
     margin-top: 289px;
-    margin-bottom: 310px;
+    /* margin-bottom: 310px; */
   }
 
   .app-overview {
