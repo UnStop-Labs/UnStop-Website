@@ -375,7 +375,7 @@ hr {
   font-weight: 500;
   font-size: 2.355rem;
   max-width: 342.04px;
-  margin: 0 auto 15px;
+  margin: 0 auto 30px;
   text-align: center;
 }
 
@@ -1601,11 +1601,13 @@ nav .container-link li.active {
 
   .info-members {
     margin-top: 289px;
+    margin-top: 276px;
   }
 
   .info-members h2 {
     font-size: 6.338rem;
     max-width: 920px;
+    margin-bottom: 81px;
   }
 
   .app-overview {
@@ -1697,7 +1699,7 @@ nav .container-link li.active {
   }
 
   .blogs {
-    padding: 176px 144px 132px;
+    padding: 0 144px 132px;
   }
 
   .blogs-img-container {
